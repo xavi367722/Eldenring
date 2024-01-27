@@ -1,0 +1,33 @@
+.volume {
+  display: flex;
+  align-items: center;
+  width: 100px; 
+}
+
+
+.slider {
+  height: 8px; 
+  background-color: #ccc; 
+  width: 100%;
+  border-radius: 4px; 
+  margin-left: 10px; 
+}
+
+.green {
+  background-color: #1db954;
+  height: 100%; 
+  border-radius: 4px;
+  width: 80%;
+}
+
+.circle {
+  background-color: #1db954; 
+  height: 16px;
+  width: 16px;
+  border-radius: 50%; 
+  position: absolute;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer; 
+}

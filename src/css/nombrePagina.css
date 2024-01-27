@@ -1,0 +1,65 @@
+.div {
+    text-align: center; 
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 8px 0px;
+  }
+  .titulo{
+    transition: 1s all ease;
+  }
+
+
+  @media (prefers-reduced-motion: no-preference) {
+    .titulo {
+      animation: titulo-spin infinite 4s linear;
+    }
+  }
+  
+
+  
+  @keyframes titulo-spin {
+    0%{
+      transform: scale(1.0);
+      
+    }
+  25%{
+    transform: scale(1.3);
+     }
+  50%{
+    transform: scale(1.5);
+  }
+  75%{
+    transform: scale(1.3);
+    ;
+  }
+  100%{
+    transform: scale(1.0);
+   }
+  }
+
+  .contenidoHeader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contenidoHeader h1{
+    color: #003049;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .contenidoHeader p{
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px; 
+  }
+  
+  p {
+    font-size: 16px; 
+    color: #666;
+  }
+

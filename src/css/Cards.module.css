@@ -1,0 +1,161 @@
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 50px; 
+}
+
+.contenedor {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.row:hover > :not(:hover){
+  opacity: .2;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #333; 
+  background: #000000;
+  overflow: hidden;
+  border-radius: 10px; 
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.card_content {
+  height: 85%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: #f2f2f2; 
+  transform: translateY(300px);
+ transition: .9s all ease;
+}
+
+.card_content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #f2f2f2;
+  border-radius: 20px;
+}
+.imgC{
+  overflow: hidden;
+  display: flex;
+}
+.disco{
+  overflow: hidden;
+  display: flex;
+}
+
+.card_title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #c1121f;
+  line-height: 15px;
+  margin-right: 15%;
+  letter-spacing: 5px;
+  width: 100%;
+}
+
+.card_subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-right: 15%;
+  color: #000000;
+}
+
+.card_description {
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-right: 15%;
+}
+
+.card:hover .card_content {
+  transform: translateY(0);
+}
+
+.card:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #007BFF;
+  color: #fff; 
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background-color: #0056b3; 
+}
+.contenedorPre{
+  display: flex;
+ justify-content: center;
+ 
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.contenedorPre h1{
+  font-size: 25px;
+}
+
+.seccionPre{
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 20px;
+}
+.contSub{
+  display: flex;
+  justify-content: center;
+  
+}
+.seccionPre p{
+  width: 60%;
+}
+.imgPre{
+  display: flex;
+  width: 500px;
+}
+.contImg{
+  display: flex;
+  justify-content: center;
+}
